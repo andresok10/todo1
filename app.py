@@ -220,7 +220,7 @@ def descargarx():
 def serve_download(filename):
     return send_from_directory(BASE_DIR, os.path.basename(filename), as_attachment=True)
 
-#if __name__ == "__main__":
+if __name__ == "__main__":
     # app.run(debug=True)
-#    port = int(os.environ.get("PORT", 5002))
-#    app.run(host="0.0.0.0", port=port, debug=True)
+    port = int(os.environ.get("PORT", 5002))
+    app.run(host="0.0.0.0", port=port, debug=True)
